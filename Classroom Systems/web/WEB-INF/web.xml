@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app 
+    xmlns="http://www.w3schools.com"
+    xsd:schemaLocation="http://www.w3schools.com webSchema.xsd"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance"
+>
+        <display-name>Infs740Project</display-name>
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+        <servlet-info>
+        <servlet>
+		<servlet-name>uploadfile</servlet-name>
+		<servlet-class>UploadFileServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>uploadfile</servlet-name>
+		<url-pattern>/uploadfile</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>fetchfile</servlet-name>
+		<servlet-class>FetchFileServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>fetchfile</servlet-name>
+		<url-pattern>/filelist</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>viewfile</servlet-name>
+		<servlet-class>FileViewServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>viewfile</servlet-name>
+		<url-pattern>/viewfile</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>DBtosystemblog</servlet-name>
+		<servlet-class>GetDataDbToSystem</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DBtosystemblog</servlet-name>
+		<url-pattern>/DbtoSystem</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>DeleteBLOB</servlet-name>
+		<servlet-class>DeleteBlogDB</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeleteBLOB</servlet-name>
+		<url-pattern>/deteleblob</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>FileOperation</servlet-name>
+		<servlet-class>FileOperationServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>FileOperation</servlet-name>
+		<url-pattern>/filemanipu</url-pattern>
+	</servlet-mapping>
+        </servlet-info>
+</web-app>
